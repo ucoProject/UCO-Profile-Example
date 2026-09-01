@@ -16,8 +16,8 @@ To create a new profile repository for the ontology with short name `Foo`, we su
 
 1. Clone the upstream example repository: `git clone https://github.com/ucoProject/UCO-Profile-Example.git UCO-Profile-Foo`.
 1. Substitute all references to the "example" ontology with the desired ontology.  Generally, this is handled by:
-   1. Update the [README](README.md) to change the name of the repository.  (Minimally, the title line should be revised.)
-   1. Addressing the "TODOs" in [`dependencies/Makefile`](dependencies/Makefile)
+   1. Updating the [README](README.md) to change the name of the repository.  (Minimally, the title line should be revised.)
+   1. Addressing the "TODOs" in [`dependencies/Makefile`](dependencies/Makefile).  Note the `check-supply-chain` recipes will typically apply to repositories that have a similarly named recipe and are linked as submodules.
    1. Updating the TSV files under [`etc/`](etc/).  This is to support local-file editing with some ontology tooling (developed for [UCO Issue 449](https://github.com/ucoProject/UCO/issues/449)).  [These lines](https://github.com/ucoProject/UCO/blob/1.2.0/src/create-catalog-v001.xml.py#L68-L77) describe the file formats.
    1. Renaming the [ontology file under `/ontology`](ontology/uco-example.ttl), and updating its contents.
    1. Renaming the [shapes file under `/shapes`](shapes/sh-uco-example.ttl), and updating its contents.  If the profile does not require shapes, the directory `shapes` can be removed.
