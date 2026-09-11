@@ -1,0 +1,14 @@
+@prefix drafting: <http://example.org/ontology/drafting/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix sh-qc: <http://example.org/shapes/sh-qc/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/shapes/sh-qc>
+	a owl:Ontology ;
+	rdfs:comment "Shapes in this graph are scoped to quality control for illustrative example data graphs."@en ;
+	.
+
