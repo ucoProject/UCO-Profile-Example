@@ -33,6 +33,7 @@ all:
 	source $(top_srcdir)/venv/bin/activate \
 	  && pyshacl \
 	    --inference none \
+	    --metashacl \
 	    --ont-graph $(top_srcdir)/ontology/generated-ontology.ttl \
 	    --shacl sh-qc.ttl \
 	    $<
